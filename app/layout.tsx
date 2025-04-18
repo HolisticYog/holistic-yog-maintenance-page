@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Site Maintenance | Your Wellness Brand",
+  title: "Site Maintenance | Holistic Yog Foundation",
   description: "Our site is currently undergoing maintenance. We'll be back soon!",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
